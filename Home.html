@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="CSS/Home.css" rel="stylesheet">
+</head>
+<body>
+     <h1>My Portfolio</h1>
+    <nav>
+        <div class="tit">
+            <p>Portfolio</p>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Project.html" target="_blank">Project</a></li>
+            <li> <a href="Contact.html" target="_blank">Contact</a></li>
+            <li><img src="image/contrast_20dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png" class="theme"></li>
+        </ul>
+        <div class="handmenu">
+            <img src="image/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="hand">
+        </div>
+    </nav>
+    <main>
+        <header>
+            <span class="photo">
+                 <img src="image/photo.png"  alt="profile Photo">
+            </span> 
+            <div>
+               <h2>This is kuralarasi M.</h2>
+               <p><q>I am a aspiring Software Engineer.I completed BE From  Anna University.I have strong knowledge in <i>Java,C#,SQL Server,HTML,CSS.</i></q></p>
+               <h3>Area of Interest</h3>
+               <ul>
+                   <li>Web Development</li>
+                   <li>Designing</li>
+                   <li>Software Development</li>
+               </ul>
+            </div>
+            
+              
+        </header>
+        <section>
+            <h3>Education</h3>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Specification</th>
+                    <th>Place</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>BE</td>
+                    <td>ECE</td>
+                    <td>Adhi collage of Engineering and technology</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Bio-Maths</td>
+                    <td rowspan="2">Government Higher Secondary School</td>
+                    <td>88%</td>
+                </tr>
+                <tr>
+                    <td>BE</td>
+                    <td>SSLC</td>
+                   
+                    <td>87%</td>
+                </tr>
+            </table>
+        </section>
+       
+        <section class="sec">
+             <h3>Skills</h3>
+             <div class="skill">
+                   <div class="skilltab">
+                   <h4>Software knowledge</h4>
+                   <ul >
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Sql Server</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>Js</li>
+                   </ul>
+                   
+              </div>
+              <div class="skilltab">
+                   <h4>Core knowledge</h4>
+                   <ul>
+                    <li>Verilog</li>
+                    <li>System Verilog</li>
+                    <li>Digital Electronics</li>
+                     
+                   </ul>
+              </div>
+             </div>
+             
+        </section>
+    </main>
+    <footer>
+         <h4>Kuralarasi M</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, temporibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio excepturi amet nulla ducimus sunt dolorum quibusdam nihil provident mollitia porro.</p>
+        <ul>
+            <li>Linkedin</li>
+            <li>Email</li>
+            <li>Instagram</li>
+            <li>Website</li>
+        </ul>
+    </footer>
+    <script>
+        const btn=document.querySelector('.theme');
+        const menuitems=document.querySelector('body');
+        btn.addEventListener('click',()=>{
+              menuitems.classList.toggle('bgtheme');
+        });
+         const menubtn=document.querySelector('.hand');
+        const listitems=document.querySelector('nav ul');
+        menubtn.addEventListener('click',()=>{
+              listitems.classList.toggle('showmenu');
+        });
+
+    </script>
+</body>
+</html>

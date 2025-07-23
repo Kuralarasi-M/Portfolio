@@ -1,0 +1,234 @@
+:root{
+    --bgcolor:rgb(209, 116, 231);
+    --bordercolor:blue;
+    --hoverbg:white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    background-color: var(--bgcolor);
+    width: 100%;
+    border: 2px solid var(--bordercolor);
+    position: relative;
+    margin: 0%;
+     box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+      padding: 10px;
+}
+.showmenu{
+    display: block;
+}
+nav a:hover{
+    background-color: var(--hoverbg);
+    color: var(--bgcolor);
+    border-radius: 5px;
+}
+nav a.active{
+    border:2px solid black;
+  
+    color: var(--hoverbg);
+}
+.handmenu{
+    display: none;
+}
+nav ul li{ 
+    padding:10px;
+    display: inline-block;
+}
+.theme{
+    margin-top:15px ;
+}
+.tit p{
+    font-weight: bolder;
+    color: var(--bordercolor);
+    font-size: 24px;
+}
+.bgtheme{
+    background-color: black;
+    color: white;
+}
+main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+    margin-top: 20px;
+}
+.project{
+    border:2px solid var(--bordercolor);
+
+    border-radius: 20px;
+    margin: 20px;
+    transition: transform  0.5s;
+}
+.project:hover{
+     box-shadow: 5px 5px 4px 5px  var(--bgcolor);
+     transform: scale(1.05);
+     background-image: linear-gradient(to top right , rgb(84, 84, 223),rgb(209, 116, 231));
+
+}
+ 
+ 
+h3{
+    text-align: center;
+    padding: 10px;
+    border:2px solid var(--bordercolor);
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color:  var(--bgcolor);
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer{
+    border:2px solid var(--bordercolor);
+    text-align: center;
+    background-color: var(--bgcolor);
+    margin-top: 30px;
+}
+footer ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}  
+footer ul li{
+     list-style: none;
+     font-weight: bolder;
+     font-size: 16px;
+     padding: 10px;
+     color: var(--bordercolor);
+}
+.project dl dt{
+    font-weight: bolder;
+    margin: 6px;
+    
+}
+.imageslider{
+    height: 150px;
+    width: 250px;
+    border:2px solid var(--bordercolor);
+    margin-bottom: 5px;
+}
+.imageslider img{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: inherit;
+    width: inherit;
+}
+h1{
+    color: var(--bgcolor);
+    animation: tit 5s linear infinite ;
+}
+@keyframes tit {
+    0%{transform: translate(0%);}
+    100%{transform: translate(100%);}
+}
+
+footer ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}  
+@media screen  and (max-width:768px){
+    nav{
+        width: 100%;
+         box-sizing: border-box;
+    }
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    .imageslider{
+         width: 150px;
+         height: 150px;
+         margin-top: 0%;
+     }
+     .imageslider img{
+        width:inherit;
+        height:inherit;
+        background-size: cover;
+        background-position: center;
+     }
+     .project dl dt{
+        margin: 7px;
+    }
+    h3{
+        width: 150px;
+    }
+}
+
+
+
+@media screen  and (max-width:480px){
+    
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    nav{
+        flex-direction: column;
+         width: 100%;
+         align-items: center;
+        justify-content: center;
+         box-sizing: border-box;
+    }
+    nav ul li {
+        display: block;
+        padding: 10px;
+        margin: 0%;
+        text-align: center;
+
+    }
+    nav ul{
+        display: none;
+    }
+    .handmenu{
+        display: block;
+        position: absolute;
+        top:20px;
+        right:20px;
+    }
+    .tit{
+         align-self: flex-start;
+         margin-left: 20px;
+
+     }
+     main div{
+        display: flex;
+        flex-direction: column;
+     }
+     .imageslider{
+         width: 150px;
+         height: 150px;
+         margin-top: 0%;
+     }
+     .imageslider img{
+        width:inherit;
+        height:inherit;
+        background-size: cover;
+        background-position: center;
+     }
+     .project dl dt{
+       
+       margin: 5px;
+    }
+    h3{
+        width: 100px;
+    }
+    footer ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
